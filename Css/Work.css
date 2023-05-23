@@ -1,0 +1,60 @@
+/* START */
+/* hero */
+.hero {
+    background-image: url(../Images/Work-Hero.webp);
+    background-position-y: center;
+}
+
+/* archive */
+.tab {
+    width: 100%;
+    margin-bottom: 50px;
+    border: 1px solid #e7e6e6;
+    border-left: unset;
+    border-right: unset;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    text-transform: capitalize;
+}
+
+.tab-item {
+    padding: 5px 0;
+    cursor: pointer;
+}
+
+.tab-item:hover {
+    color: var(--primary-color);
+}
+
+.current-item {
+    border-top: 2px solid var(--primary-color);
+    transition: color 0.25s , border 0s;
+}
+
+.archive .parent-items {
+    grid-template-columns: repeat(2,1fr) !important;
+}
+
+/* partners */
+.partners {
+    background-color: var(--bg-color);
+    padding-bottom: 0;
+}
+
+.partners .semicircular::after {
+    display: none;
+}
+
+/* call to action */
+.call-to-action {
+    background-image: url(../Images/Work-Call-To-Action.webp);
+}
+
+/* Responsive */
+@media (max-width:600px) {
+    .archive .parent-items {
+        grid-template-columns: repeat(1,1fr) !important;
+    }
+}
+/* THE END */

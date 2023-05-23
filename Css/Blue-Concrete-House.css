@@ -1,0 +1,12 @@
+/* START */
+/* hero */
+.hero {
+    background-image: url(../Images/Project-04-Hero.webp);
+    background-position-y: 20px;
+}
+
+/* call to action */
+.call-to-action {
+    background-image: url(../Images/Work-Call-To-Action.webp);
+}
+/* THE END */

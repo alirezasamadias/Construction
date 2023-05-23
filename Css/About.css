@@ -1,0 +1,86 @@
+/* START */
+/* hero */
+.hero {
+    background-image: url(../Images/About-Hero.webp);
+}
+
+/* Inspiring */
+.Inspiring-img {
+    width: 80%;
+}
+
+/* our team */
+.our-team {
+    background-color: var(--bg-color);
+    padding-bottom: 0;
+}
+
+.our-team .semicircular::after {
+    display: none;
+}
+
+.our-team .parent-items {
+    grid-template-columns: repeat(3,1fr);
+}
+
+.card-person {
+    background-color: #fff;
+}
+
+.parent-img {
+    overflow: hidden;
+}
+
+.card-img {
+    transition-duration: 1s;
+}
+
+.card-img:hover {
+    transform: scale(1.1);
+    filter: opacity(85%);
+}
+
+.card-content {
+    padding: 40px;
+}
+
+.card-person .title_md {
+    margin-bottom: 5px;
+    letter-spacing: normal;
+    font-size: 18px;
+}
+
+.card-social {
+    margin: 20px 0 30px;
+}
+
+.card-social-icon {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    line-height: 35px;
+    margin: 2px;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    color: #fff;
+    transition: all 0.5s , color 0s;
+}
+
+.card-social-icon:hover {
+    background-color: var(--bg-color);
+    color: inherit;
+}
+
+/* parallax */
+.parallax {
+    background-image: url(../Images/About-Parallax.webp);
+}
+
+/* Responsive */
+@media (max-width:426px) {
+    .card-content {
+        padding: 25px;
+    }
+}
+/* THE END */
+/* 86 */
