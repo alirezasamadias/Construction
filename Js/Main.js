@@ -15,7 +15,7 @@ const subMenu = document.querySelector('.sub-menu');
 // footer iframe
 const iframeEl = document.querySelector('#footer iframe');
 // static map
-const getMap = document.getElementById('get-map');
+const getStaticMap = document.getElementById('get-static-map');
 const staticMapEl = document.getElementById('static-map');
 const boxEl = document.querySelector('.box');
 // show scroll up page
@@ -24,7 +24,6 @@ const scrollUpEl = document.querySelector('.scroll-up-page');
 // site loader
 document.onreadystatechange = ()=>{
     if (document.readyState == "complete") {
-        // bodyEl.style.visibility = "visible";
         siteLoaderEl.style.opacity = "0";
         siteLoaderEl.style.visibility = "hidden";
     }
@@ -103,7 +102,7 @@ window.addEventListener('scroll',()=>{
 });
 
 // static map
-getMap.addEventListener('click',()=>{
+getStaticMap.addEventListener('click',()=>{
     boxEl.innerHTML = '<div class="loader"></div>';
     setTimeout(() => {
         boxEl.style.display = 'none';
