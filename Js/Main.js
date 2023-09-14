@@ -26,9 +26,9 @@ document.onreadystatechange = ()=>{
     if (document.readyState != "complete") {
         bodyEl.style.display = 'none';
     } else {
+        bodyEl.style.display = 'block';
         siteLoaderEl.style.opacity = "0";
         siteLoaderEl.style.visibility = "hidden";
-        bodyEl.style.display = 'block';
     }
 };
 
