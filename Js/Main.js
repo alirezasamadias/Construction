@@ -22,8 +22,8 @@ const boxEl = document.querySelector('.box');
 const scrollUpEl = document.querySelector('.scroll-up-page');
 
 // site loader
-heroEl.style.display = 'none';
 document.onreadystatechange = ()=>{
+    heroEl.style.display = 'none';
     if (document.readyState == "complete") {
         siteLoaderEl.style.opacity = "0";
         siteLoaderEl.style.visibility = "hidden";
