@@ -36,6 +36,7 @@
     grid-template-columns: repeat(2,1fr) !important;
 }
 
+
 /* partners */
 .partners {
     background-color: var(--bg-color);

@@ -83,17 +83,10 @@
 }
 
 .networks-icon {
-    display: inline-block;
     padding: 12px;
     border-radius: 4px;
     font-size: 20px;
     color: #fff;
-}
-
-.icon-email {
-    padding: 9px;
-    font-weight: bold;
-    font-size: 26px;
 }
 
 .sharing-box .icon-facebook {
@@ -172,8 +165,8 @@
     padding: 20px 0;
 }
 
-/* searchbox */
-.searchbox {
+/* search-box */
+.search-box {
     all: unset;
     display: flex;
 }
@@ -186,12 +179,12 @@
     border-color: #dddddd;
 }
 
-.search-submit {
+.btn-search {
     position: relative;
     padding: 13px 16px;
 }
 
-input[type='submit'] {
+.submit-search {
     width: 100%;
     height: 100%;
     background-color: #000000;
@@ -202,11 +195,11 @@ input[type='submit'] {
     left: 0;
 }
 
-input[type='submit']:hover { 
+.submit-search:hover { 
     background-color: var(--primary-color);
 }
 
-.searchbox .icon-search {
+.btn-search .icon-search {
     cursor: pointer;
     position: relative;
     z-index: 2;
@@ -240,10 +233,6 @@ input[type='submit']:hover {
     background-color: transparent;
     border-top: 3px solid var(--primary-color);
     transition: background-color 0.25s , border 0s ;
-}
-
-.tab-target[data-target='recent'] {
-    display: none;
 }
 
 .tab .list-item {

@@ -36,7 +36,7 @@
     font-style: normal;
 }
 
-/* Animation */
+/* Animations */
 /* site loader */
 @keyframes spin {
     100% {
@@ -129,7 +129,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    transition: all 1s , background-color 0s;
+    transition-duration: 0.7s;
 }
 
 .loader-img {
@@ -166,16 +166,40 @@ li {
 }
 
 a {
+    display: inline-block;
     text-decoration: none;
     color: inherit;
 }
 
 img {
-    display: block;
+    display: inline-block;
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center center;
+}
+/* image alt */
+img::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: calc(100% + 15px);
+    background-color: #e6e6e6;
+    border: 2px dotted #c8c8c8;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+img::after {
+    content: '\f127' ' Broken Image of ' attr(alt);
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    font: 16px 'icomoon';
+    color: #646464;
 }
 
 p {
@@ -247,7 +271,6 @@ iframe {
 
 /* btn */
 .btn {
-    display: inline-block;
     padding: 13px 28px;
     border: unset;
     cursor: pointer;
@@ -588,7 +611,6 @@ iframe {
 }
 
 .sub-menu-link {
-    display: inline-block;
     width: 100%;
     padding: 20px;
     letter-spacing: 1px;
@@ -602,7 +624,7 @@ iframe {
     color: var(--primary-color);
 }
 
-.sub-menu-btn {
+.submenu-btn {
     display: none;
 }
 
@@ -707,7 +729,6 @@ iframe {
 }
 
 .slide-img {
-    display: inline-block;
     width: 140px;
     height: 140px;
     border-radius: 50%;
@@ -890,7 +911,6 @@ form {
 }
 
 .footer-logo {
-    display: inline-block;
     height: 75px;
 }
 
@@ -918,7 +938,7 @@ form {
     width: 100%;
     height: 300px;
     padding: 30px 20px;
-    background-color: rgb(85, 85, 85);
+    background-color: #555555;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1066,7 +1086,6 @@ form {
     }
 
     .menu-hamburger {
-        align-self: center;
         padding-top: 10px;
         cursor: pointer;
         display: flex;
@@ -1075,10 +1094,10 @@ form {
     }
 
     .icon-close {
-        transform: rotate(180deg);
+        transform: rotate(-180deg);
     }
 
-    .sub-menu-btn {
+    .submenu-btn {
         display: flex;
         padding: 20px;
         cursor: pointer;
@@ -1088,7 +1107,7 @@ form {
         font-size: 24px;
     }
 
-    .sub-menu-btn:hover {
+    .submenu-btn:hover {
         background-color: var(--primary-color);
     }
     

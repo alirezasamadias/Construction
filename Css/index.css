@@ -184,6 +184,10 @@
     background-color: var(--bg-color);
 }
 
+.news .img-shadow {
+    row-gap: 20px;
+}
+
 .news .parent-items {
     grid-template-columns: repeat(3,1fr);
 }

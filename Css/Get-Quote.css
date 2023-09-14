@@ -43,15 +43,6 @@
     font-size: 15px;
 }
 
-.icon-email {
-    margin: unset;
-    margin-right: 7px;
-    padding-top: 2px;
-    transform: translateX(-1.5px);
-    font-size: 18px !important;
-    font-weight: bold;
-}
-
 /* main content */
 .main-content {
     padding: 80px 10%;
