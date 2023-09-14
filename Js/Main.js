@@ -2,7 +2,6 @@
 // site loader
 const bodyEl = document.querySelector('body');
 const siteLoaderEl = document.querySelector('.site-loader');
-const heroContainerEl = document.querySelector('.hero .container');
 // header slide
 const headerEl = document.getElementById('header');
 const heroEl = document.querySelector('.hero');
@@ -23,12 +22,12 @@ const boxEl = document.querySelector('.box');
 const scrollUpEl = document.querySelector('.scroll-up-page');
 
 // site loader
-heroContainerEl.style.display = 'none';
+heroEl.style.display = 'none';
 document.onreadystatechange = ()=>{
     if (document.readyState == "complete") {
         siteLoaderEl.style.opacity = "0";
         siteLoaderEl.style.visibility = "hidden";
-        heroContainerEl.style.display = 'block';
+        heroEl.style.display = 'block';
     }
 };
 
