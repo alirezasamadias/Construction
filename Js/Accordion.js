@@ -8,15 +8,13 @@ tabContents[0].style.display = 'block';
 
 for (const tabItemEl of tabItems) {
     tabItemEl.addEventListener('click',()=>{
-        tabItemEl.classList.toggle('tabitem-current');
+        for (const tabItemEl of tabItems) {
+            tabItemEl.classList.remove('tabitem-current');
+        }
+        tabItemEl.classList.add('tabitem-current');
 
         for (const tabContentEl of tabContents) {
-            if (tabItemEl.classList.contains('tabitem-current') && tabItemEl.dataset.target === tabContentEl.dataset.target){
-                for (const tabItemEl of tabItems) {
-                    tabItemEl.classList.remove('tabitem-current');
-                }
-                tabItemEl.classList.add('tabitem-current');
-
+            if (tabItemEl.dataset.target === tabContentEl.dataset.target){
                 setTimeout(()=>{
                     tabContentEl.style.display = 'block';
                 },200);

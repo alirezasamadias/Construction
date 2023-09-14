@@ -9,7 +9,7 @@ const heroEl = document.querySelector('.hero');
 const menuEl = document.querySelector('.menu');
 const menuHamburgerEl = document.querySelector('.menu-hamburger');
 const menuHamburgerIcon = document.querySelector('.icon-menu');
-const btnSubMenu = document.querySelector('.submenu-btn');
+const btnSubMenu = document.querySelector('.sub-menu-btn');
 const btnSubMenuIcon = document.querySelector('.icon-down');
 const subMenu = document.querySelector('.sub-menu');
 // footer iframe
@@ -23,10 +23,7 @@ const scrollUpEl = document.querySelector('.scroll-up-page');
 
 // site loader
 document.onreadystatechange = ()=>{
-    if (document.readyState != "complete") {
-        bodyEl.style.display = 'none';
-    } else {
-        bodyEl.style.display = 'block';
+    if (document.readyState == "complete") {
         siteLoaderEl.style.opacity = "0";
         siteLoaderEl.style.visibility = "hidden";
     }
@@ -93,8 +90,8 @@ menuHamburgerEl.addEventListener('click',()=>{
 });
 // btn sub menu
 btnSubMenu.addEventListener('click',()=>{
-    subMenu.classList.toggle('show-sub-menu');
     btnSubMenuIcon.classList.toggle('icon-up');
+    subMenu.classList.toggle('show-sub-menu');
 });
 
 // footer iframe
