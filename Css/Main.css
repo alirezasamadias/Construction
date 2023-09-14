@@ -129,7 +129,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* transition-duration: 0.7s; */
+    transition-duration: 0.7s;
 }
 
 .loader-img {
