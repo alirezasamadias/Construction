@@ -8,14 +8,12 @@ const heroEl = document.querySelector('.hero');
 // show menu
 const menuEl = document.querySelector('.menu');
 const menuHamburgerEl = document.querySelector('.menu-hamburger');
-const menuHamburgerIcon = document.querySelector('.icon-menu');
-const btnSubMenu = document.querySelector('.submenu-btn');
-const btnSubMenuIcon = document.querySelector('.icon-down');
-const subMenu = document.querySelector('.sub-menu');
+const btnSubMenuEl = document.querySelector('.submenu-btn');
+const subMenuEl = document.querySelector('.sub-menu');
 // footer iframe
 const iframeEl = document.querySelector('#footer iframe');
 // static map
-const getStaticMap = document.getElementById('get-static-map');
+const getStaticMapEl = document.getElementById('get-static-map');
 const staticMapEl = document.getElementById('static-map');
 const boxEl = document.querySelector('.box');
 // show scroll up page
@@ -89,12 +87,12 @@ window.addEventListener('resize',()=>{
 menuHamburgerEl.addEventListener('click',()=>{
     menuEl.classList.toggle('show-menu');
     // change menu hamburger icon
-    menuHamburgerIcon.classList.toggle('icon-close');
+    menuHamburgerEl.classList.toggle('icon-close');
 });
 // btn sub menu
-btnSubMenu.addEventListener('click',()=>{
-    subMenu.classList.toggle('show-sub-menu');
-    btnSubMenuIcon.classList.toggle('icon-up');
+btnSubMenuEl.addEventListener('click',()=>{
+    subMenuEl.classList.toggle('show-sub-menu');
+    btnSubMenuEl.classList.toggle('icon-up');
 });
 
 // footer iframe
@@ -105,7 +103,7 @@ window.addEventListener('scroll',()=>{
 });
 
 // static map
-getStaticMap.addEventListener('click',()=>{
+getStaticMapEl.addEventListener('click',()=>{
     boxEl.innerHTML = '<div class="loader"></div>';
     setTimeout(() => {
         boxEl.style.display = 'none';

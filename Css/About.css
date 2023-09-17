@@ -63,7 +63,7 @@
     background-color: var(--primary-color);
     border-radius: 5px;
     color: #fff;
-    transition: all 0.5s , color 0s;
+    transition-duration: 0.3s;
 }
 
 .card-social-icon:hover {

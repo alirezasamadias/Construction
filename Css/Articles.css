@@ -40,14 +40,9 @@
     text-transform: capitalize;
 }
 
-.post-info p,
-.post-info a {
+.post-info>:nth-child(n) {
     font-size: 12px;
     color: var(--secondary-color);
-}
-
-.post-info a:hover {
-    color: var(--primary-color);
 }
 
 .post-info a:last-child {

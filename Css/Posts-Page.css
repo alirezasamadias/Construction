@@ -62,6 +62,7 @@
 .article-info a {
     font-size: 12px;
     color: var(--secondary-color);
+    transition-duration: 0.25s;
 }
 
 .article-info a:hover {
@@ -173,6 +174,7 @@
 
 .form-item {
     margin-top: unset;
+    transition-duration: 0.25s;
 }
 
 .form-item:hover {
@@ -193,6 +195,7 @@
     position: absolute;
     top: 0;
     left: 0;
+    transition-duration: 0.25s;
 }
 
 .submit-search:hover { 
@@ -223,6 +226,7 @@
     text-transform: capitalize;
     font-weight: normal;
     font-size: 18px;
+    transition-duration: 0.25s;
 }
 
 .tab-item:hover {
@@ -288,7 +292,7 @@
     text-transform: capitalize;
     font-size: 14px;
     color: var(--secondary-color);
-    transition: all 0.25s , color 0s;
+    transition-duration: 0.25s;
 }
 
 .tag-link:hover {

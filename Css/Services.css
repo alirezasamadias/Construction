@@ -26,6 +26,7 @@
     text-transform: capitalize;
     font-size: 18px;
     color: #333;
+    transition-duration: 0.25s;
 }
 
 .tabitem-current,

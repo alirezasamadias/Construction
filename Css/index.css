@@ -21,6 +21,7 @@
 .card {
     transform-style: preserve-3d;
     transition: 0.5s cubic-bezier(0.2, 0.85, 0.4, 1.275);
+    transition-duration: 0.25s;
 }
 
 .card-parent:hover .card {
@@ -119,6 +120,7 @@
     font-size: 58px;
     color: #fff;
     position: relative;
+    transition-duration: 0.25s;
 }
 
 .values .icon-home {
@@ -150,6 +152,7 @@
     top: 0;
     left: 0;
     opacity: 0;
+    transition-duration: 0.25s;
 }
 
 .icon-parent:hover .values-item-icon::after {
@@ -162,6 +165,7 @@
     letter-spacing: 1px;
     text-transform: capitalize;
     font: 16px 'ralewayregular';
+    transition-duration: 0.25s;
 }
 
 .icon-parent:hover .title_sm {
