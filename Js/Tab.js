@@ -5,6 +5,8 @@ const btnAll = document.querySelector('[data-target=all]');
 
 for (const tabItemEl of tabItems) {
     for (const tabTargetEl of tabTargets) {
+        tabTargetEl.style.transitionDuration = '0.25s';
+
         if (!btnAll) {
             tabTargetEl.style.display = 'none';
             tabTargets[0].style.display = 'block';

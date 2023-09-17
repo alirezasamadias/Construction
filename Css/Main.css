@@ -81,7 +81,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* transition-duration: 0.25s; */
 }
 
 :root {
@@ -130,7 +129,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    transition: all 1s , background-color 0s;
+    transition: all 0.7s , background-color 0s;
 }
 
 .loader-img {
@@ -146,7 +145,6 @@
     border: 2px solid gray;
     border-top: 2px solid var(--primary-color);
     animation: spin 1s linear infinite;
-    transition: 0s;
 }
 
 /* body */
@@ -278,6 +276,7 @@ iframe {
     letter-spacing: 2px;
     text-transform: uppercase;
     font: bold 14px 'ralewayregular';
+    transition-duration: 0.25s;
 }
 
 .btn_lg {
@@ -288,7 +287,6 @@ iframe {
 .btn-primary {
     background-color: var(--primary-color);
     color: var(--secondary-color);
-    transition-duration: 0.25s;
 }
 
 .btn-primary:hover {
@@ -299,7 +297,6 @@ iframe {
 .btn-secondary {
     background-color: var(--secondary-color);
     color: #fff;
-    transition-duration: 0.25s;
 }
 
 .btn-secondary:hover {
@@ -312,7 +309,6 @@ iframe {
     margin-top: 70px;
     color: var(--secondary-color);
     position: relative;
-    transition-duration: 0.25s;
 }
 
 .btn-hide:hover {
@@ -365,10 +361,6 @@ iframe {
     padding: 20px 15px;
     border-left: 4px solid var(--primary-color);
     font: italic 15px / 2 'ralewaymedium';
-}
-
-[class^="icon-"] {
-    transition: color 0s;
 }
 
 /* semicircular */
@@ -545,6 +537,7 @@ iframe {
     height: 100%;
     display: flex;
     justify-content: space-between;
+    transition-duration: 0.25s;
 }
 
 .menu-item {
@@ -587,7 +580,7 @@ iframe {
 }
 
 /* sub menu */
-.sub-menu {
+.submenu {
     visibility: hidden;
     opacity: 0;
     width: 225px;
@@ -599,12 +592,12 @@ iframe {
     transition: 0.5s 0.15s;
 }
 
-.menu-item:hover .sub-menu {
+.menu-item:hover .submenu {
     visibility: visible;
     opacity: 1;
 }
 
-.sub-menu::before {
+.submenu::before {
     content: "";
     border: 10px solid transparent;
     border-bottom: 8px solid #fff;
@@ -613,15 +606,15 @@ iframe {
     left: 17px;
 }
 
-.sub-menu-item {
+.submenu-item {
     border-bottom: 1px solid #e2e2e2;
 }
 
-.sub-menu-item:last-child {
+.submenu-item:last-child {
     border-bottom: unset;
 }
 
-.sub-menu-link {
+.submenu-link {
     width: 100%;
     padding: 20px;
     letter-spacing: 1px;
@@ -632,7 +625,7 @@ iframe {
     transition-duration: 0.25s;
 }
 
-.sub-menu-link:hover {
+.submenu-link:hover {
     color: var(--primary-color);
 }
 
@@ -808,7 +801,7 @@ iframe {
     display: flex;
     justify-content: space-between;
     overflow: hidden;
-    transition: 0.3s;
+    transition-duration: 0.3s;
 }
 
 .carousel.dragging {
@@ -1015,7 +1008,7 @@ form {
 .scroll-up-page {
     width: 50px;
     height: 50px;
-    padding-top: 5px;
+    line-height: 50px;
     border-radius: 3px;
     background-color: #333;
     position: fixed;
@@ -1103,19 +1096,20 @@ form {
     }
 
     .menu-hamburger {
-        padding-top: 10px;
+        display: block;
         cursor: pointer;
-        display: flex;
         font-size: 38px;
         color: var(--primary-color);
+        transition-duration: 0.25s;
     }
 
     .icon-close {
+        padding-top: 4px;
         transform: rotate(-180deg);
     }
 
     .submenu-btn {
-        display: flex;
+        display: block;
         padding: 20px;
         cursor: pointer;
         position: absolute;
@@ -1129,7 +1123,7 @@ form {
         background-color: var(--primary-color);
     }
     
-    .sub-menu {
+    .submenu {
         width: 100%;
         height: 0;
         box-shadow: unset;
@@ -1138,22 +1132,22 @@ form {
         overflow-y: hidden;
     }
 
-    .show-sub-menu {
+    .show-submenu {
         height: 260px;
         visibility: visible;
         opacity: 1;
     }
 
-    .sub-menu::before {
+    .submenu::before {
         display: none;
     }
     
-    .sub-menu-link:hover {
+    .submenu-link:hover {
         background-color: var(--primary-color);
         color: initial;
     }
     
-    .sub-menu-item:last-child {
+    .submenu-item:last-child {
         border-bottom: 1px solid #e2e2e2;
     }
 

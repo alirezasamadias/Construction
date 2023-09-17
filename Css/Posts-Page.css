@@ -61,12 +61,6 @@
 .article-info p,
 .article-info a {
     font-size: 12px;
-    color: var(--secondary-color);
-    transition-duration: 0.25s;
-}
-
-.article-info a:hover {
-    color: var(--primary-color);
 }
 
 /* sharing box */
@@ -153,17 +147,18 @@
     border-bottom: 1px solid #e6e6e6;
     text-transform: capitalize;
     line-height: 2;
-    transition: color 0s;
 }
 
 .sidebar .list-item-link {
-    display: inline-block;
     width: 100%;
+    display: flex;
+    align-items: center;
     padding: 15px 0;
 }
 
 .icon-right {
-    padding: 20px 0;
+    align-self: flex-start;
+    padding: 6px 5px 0 0;
 }
 
 /* search-box */
@@ -174,7 +169,6 @@
 
 .form-item {
     margin-top: unset;
-    transition-duration: 0.25s;
 }
 
 .form-item:hover {
@@ -214,17 +208,18 @@
     border: 1px solid var(--bg-color);
 }
 
-.tab-items {
+.tab-list {
     display: flex;
 }
 
 .tab-item {
     width: 50%;
-    padding: 12px 0;
+    padding: 12px;
     background-color: var(--bg-color);
-    letter-spacing: normal;
+    border-top: 3px solid transparent;
+    cursor: pointer;
     text-transform: capitalize;
-    font-weight: normal;
+    text-align: center;
     font-size: 18px;
     transition-duration: 0.25s;
 }
@@ -235,8 +230,7 @@
 
 .current-item {
     background-color: transparent;
-    border-top: 3px solid var(--primary-color);
-    transition: background-color 0.25s , border 0s ;
+    border-color: var(--primary-color);
 }
 
 .tab .list-item {

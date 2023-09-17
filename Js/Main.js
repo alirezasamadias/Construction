@@ -9,7 +9,7 @@ const heroEl = document.querySelector('.hero');
 const menuEl = document.querySelector('.menu');
 const menuHamburgerEl = document.querySelector('.menu-hamburger');
 const btnSubMenuEl = document.querySelector('.submenu-btn');
-const subMenuEl = document.querySelector('.sub-menu');
+const subMenuEl = document.querySelector('.submenu');
 // footer iframe
 const iframeEl = document.querySelector('#footer iframe');
 // static map
@@ -83,7 +83,7 @@ window.addEventListener('resize',()=>{
     }
 });
 
-// show menu
+// show/hide menu
 menuHamburgerEl.addEventListener('click',()=>{
     menuEl.classList.toggle('show-menu');
     // change menu hamburger icon
@@ -91,8 +91,17 @@ menuHamburgerEl.addEventListener('click',()=>{
 });
 // btn sub menu
 btnSubMenuEl.addEventListener('click',()=>{
-    subMenuEl.classList.toggle('show-sub-menu');
+    subMenuEl.classList.toggle('show-submenu');
     btnSubMenuEl.classList.toggle('icon-up');
+});
+// hide menu
+window.addEventListener('click',(e)=>{
+    if (e.target.parentElement.classList.contains('header-nav') || e.target.parentElement.classList.contains('menu-item')) {
+        true;
+    } else {
+        menuEl.classList.remove('show-menu');
+        menuHamburgerEl.classList.remove('icon-close');
+    }
 });
 
 // footer iframe

@@ -12,13 +12,13 @@
     text-align: left;
 }
 
-.tablist {
+.tab-list {
     display: flex;
     flex-direction: column;
     row-gap: 10px;
 }
 
-.tabitem {
+.tab-item {
     width: 250px;
     background-color: var(--bg-color);
     padding: 12px 28px;
@@ -29,8 +29,8 @@
     transition-duration: 0.25s;
 }
 
-.tabitem-current,
-.tabitem:hover {
+.current-item,
+.tab-item:hover {
     background-color: var(--primary-color);
 }
 
@@ -47,7 +47,7 @@
     row-gap: 20px;
 }
 
-div.tabitem {
+div.tab-item {
     display: none;
 }
 
@@ -73,11 +73,11 @@ div.tabitem {
         row-gap: 10px;
     }
 
-    .tablist {
+    .tab-list {
         display: none;
     }
 
-    div.tabitem {
+    div.tab-item {
         display: block;
         width: 100%;
         padding: 17px 22px;

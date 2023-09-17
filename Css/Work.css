@@ -20,6 +20,7 @@
 
 .tab-item {
     padding: 5px 0;
+    border-top: 2px solid transparent;
     cursor: pointer;
     transition-duration: 0.25s;
 }
@@ -29,8 +30,7 @@
 }
 
 .current-item {
-    border-top: 2px solid var(--primary-color);
-    transition: color 0.25s , border 0s;
+    border-color: var(--primary-color);
 }
 
 .archive .parent-items {

@@ -1,21 +1,21 @@
 // START
-const tabItems = document.querySelectorAll('.tabitem');
+const tabItems = document.querySelectorAll('.tab-item');
 const tabContents = document.querySelectorAll('.tab-content');
 
-tabItems[0].classList.add('tabitem-current');
+tabItems[0].classList.add('current-item');
 tabContents[0].style.opacity = '1';
 tabContents[0].style.display = 'block';
 
 for (const tabItemEl of tabItems) {
     tabItemEl.addEventListener('click',()=>{
-        tabItemEl.classList.toggle('tabitem-current');
+        tabItemEl.classList.toggle('current-item');
 
         for (const tabContentEl of tabContents) {
-            if (tabItemEl.classList.contains('tabitem-current') && tabItemEl.dataset.target === tabContentEl.dataset.target){
+            if (tabItemEl.classList.contains('current-item') && tabItemEl.dataset.target === tabContentEl.dataset.target){
                 for (const tabItemEl of tabItems) {
-                    tabItemEl.classList.remove('tabitem-current');
+                    tabItemEl.classList.remove('current-item');
                 }
-                tabItemEl.classList.add('tabitem-current');
+                tabItemEl.classList.add('current-item');
 
                 setTimeout(()=>{
                     tabContentEl.style.display = 'block';
