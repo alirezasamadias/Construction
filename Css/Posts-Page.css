@@ -11,7 +11,7 @@
 
 .hero .title_lg {
     text-transform: capitalize;
-    font: 48px 'ralewayregular';
+    font: 48px 'raleway-regular';
 }
 
 /* main column */
@@ -104,10 +104,8 @@
 }
 
 /* related posts */
-.post-items {
+.related-posts .parent-items {
     margin-top: 25px;
-    display: flex;
-    column-gap: 35px;
 }
 
 .post-content {
@@ -137,7 +135,7 @@
     padding: 9px 15px;
     background-color: var(--bg-color);
     text-transform: capitalize;
-    font: lighter 20px "ralewayregular";
+    font: lighter 20px "raleway-regular";
     color: var(--secondary-color);
 }
 

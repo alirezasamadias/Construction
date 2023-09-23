@@ -162,7 +162,7 @@
     margin-bottom: 20px;
     letter-spacing: 1px;
     text-transform: capitalize;
-    font: 16px 'ralewayregular';
+    font: 16px 'raleway-regular';
     transition-duration: 0.25s;
 }
 
@@ -188,10 +188,6 @@
 
 .news .img-shadow {
     row-gap: 20px;
-}
-
-.news .parent-items {
-    grid-template-columns: repeat(3,1fr);
 }
 
 .news-item {
@@ -250,7 +246,7 @@
     max-width: 700px;
     margin-bottom: 0;
     text-transform: capitalize;
-    font: 20px / 1.5 "ralewayregular";
+    font: 20px / 1.5 "raleway-regular";
 }
 
 .sub-btn {

@@ -19,10 +19,6 @@
     display: none;
 }
 
-.our-team .parent-items {
-    grid-template-columns: repeat(3,1fr);
-}
-
 .card-person {
     background-color: #fff;
 }
