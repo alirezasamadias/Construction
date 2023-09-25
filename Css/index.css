@@ -47,13 +47,9 @@
 }
 
 .card-face-icon {
-    width: 64px;
-    height: 64px;
+    padding: 18px;
     border-radius: 50%;
     border: 1px solid #747474;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-size: 28px;
 }
 
@@ -109,13 +105,9 @@
 }
 
 .values-item-icon {
-    width: 120px;
-    height: 120px;
+    padding: 30px;
     margin-bottom: 10px;
     border-radius: 50%;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
     font-size: 58px;
     color: #fff;
     position: relative;
@@ -192,6 +184,8 @@
 
 .news-item {
     background-color: #fff;
+    display: flex;
+    flex-direction: column;
 }
 
 .news-item-content {

@@ -42,8 +42,7 @@
 }
 
 .tab-pane {
-    display: flex;
-    flex-direction: column;
+    display: grid;
     row-gap: 20px;
 }
 
@@ -52,7 +51,7 @@ div.tab-item {
 }
 
 .tab-img {
-    height: 60vh;
+    max-height: 60vh;
     margin: 10px 0;
 }
 

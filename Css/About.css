@@ -6,7 +6,9 @@
 
 /* Inspiring */
 .inspiring-img {
-    width: 60%;
+    width: auto;
+    min-width: 60%;
+    height: 35vw;
 }
 
 /* our team */
@@ -21,10 +23,13 @@
 
 .card-person {
     background-color: #fff;
+    display: flex;
+    flex-direction: column;
 }
 
 .parent-img {
     overflow: hidden;
+    height: 100%;
 }
 
 .card-img {
@@ -51,7 +56,6 @@
 }
 
 .card-social-icon {
-    display: inline-block;
     width: 32px;
     height: 32px;
     line-height: 35px;
@@ -79,4 +83,3 @@
     }
 }
 /* THE END */
-/* 86 */
