@@ -3,12 +3,10 @@
 /* Raleway-Extrabold */
 @font-face {
     font-family: 'raleway-extrabold';
-    src: url('../Fonts/Raleway/Raleway-Extrabold.eot');
-    src: url('../Fonts/Raleway/Raleway-Extrabold.eot?#iefix') format('embedded-opentype'),
-         url('../Fonts/Raleway/Raleway-Extrabold.woff2') format('woff2'),
-         url('../Fonts/Raleway/Raleway-Extrabold.woff') format('woff'),
-         url('../Fonts/Raleway/Raleway-Extrabold.ttf') format('truetype'),
-         url('../Fonts/Raleway/Raleway-Extrabold.svg#ralewayextrabold') format('svg');
+    src: 
+        url('../Fonts/Raleway/Raleway-Extrabold.woff2') format('woff2'),
+        url('../Fonts/Raleway/Raleway-Extrabold.woff') format('woff'),
+        url('../Fonts/Raleway/Raleway-Extrabold.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -16,12 +14,10 @@
 /* Raleway-Medium */
 @font-face {
     font-family: 'raleway-medium';
-    src: url('../Fonts/Raleway/Raleway-Medium.eot');
-    src: url('../Fonts/Raleway/Raleway-Medium.eot?#iefix') format('embedded-opentype'),
-         url('../Fonts/Raleway/Raleway-Medium.woff2') format('woff2'),
-         url('../Fonts/Raleway/Raleway-Medium.woff') format('woff'),
-         url('../Fonts/Raleway/Raleway-Medium.ttf') format('truetype'),
-         url('../Fonts/Raleway/Raleway-Medium.svg#ralewaymedium') format('svg');
+    src: 
+        url('../Fonts/Raleway/Raleway-Medium.woff2') format('woff2'),
+        url('../Fonts/Raleway/Raleway-Medium.woff') format('woff'),
+        url('../Fonts/Raleway/Raleway-Medium.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -29,12 +25,10 @@
 /* Raleway-Regular */
 @font-face {
     font-family: 'raleway-regular';
-    src: url('../Fonts/Raleway/Raleway-Regular.eot');
-    src: url('../Fonts/Raleway/Raleway-Regular.eot?#iefix') format('embedded-opentype'),
-         url('../Fonts/Raleway/Raleway-Regular.woff2') format('woff2'),
-         url('../Fonts/Raleway/Raleway-Regular.woff') format('woff'),
-         url('../Fonts/Raleway/Raleway-Regular.ttf') format('truetype'),
-         url('../Fonts/Raleway/Raleway-Regular.svg#raleway-regular') format('svg');
+    src:
+        url('../Fonts/Raleway/Raleway-Regular.woff2') format('woff2'),
+        url('../Fonts/Raleway/Raleway-Regular.woff') format('woff'),
+        url('../Fonts/Raleway/Raleway-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
