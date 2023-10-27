@@ -1,4 +1,3 @@
-/* START */
 /* hero */
 .hero {
     background-image: url(../Images/About-Hero.webp);
@@ -29,7 +28,6 @@
 
 .parent-img {
     overflow: hidden;
-    height: 100%;
 }
 
 .card-img {
@@ -42,10 +40,11 @@
 }
 
 .card-content {
+    margin-top: auto;
     padding: 40px;
 }
 
-.card-person .title_md {
+.card-person .title-md {
     margin-bottom: 5px;
     letter-spacing: normal;
     font-size: 18px;
@@ -56,12 +55,13 @@
 }
 
 .card-social-icon {
-    width: 32px;
-    height: 32px;
-    line-height: 35px;
-    margin: 2px;
+    margin: 0 2px;
+    padding: 8px;
     background-color: var(--primary-color);
     border-radius: 5px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     color: #fff;
     transition-duration: 0.3s;
 }

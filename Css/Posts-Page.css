@@ -1,15 +1,9 @@
-/* START */
 /* hero */
 .hero {
-    min-height: 50vh;
     background-color: #333;
 }
 
-.hero .container {
-    min-height: 50vh;
-}
-
-.hero .title_lg {
+.hero .title-md {
     text-transform: capitalize;
     font: 48px 'raleway-regular';
 }
@@ -29,7 +23,7 @@
     row-gap: 25px;
 }
 
-.main-content .title_sm {
+.main-content .title-sm {
     letter-spacing: 1px;
     text-transform: capitalize;
 }
@@ -116,7 +110,7 @@
     padding-top: 20px;
 }
 
-.post-content .title_sm {
+.post-content .title-sm {
     letter-spacing: normal;
     color: var(--text-color);
 }
@@ -246,7 +240,7 @@
     border-bottom: none;
 }
 
-.tab .title_sm {
+.tab .title-sm {
     text-transform: capitalize;
     font-size: 15px;
 }
@@ -317,7 +311,7 @@
 }
 
 @media (max-width: 768px) {
-    .hero .title_lg {
+    .hero .title-md {
         font-size: 40px;
     }
 
@@ -334,21 +328,21 @@
 }
 
 @media (max-width: 600px) {
-    .hero .title_lg {
+    .hero .title-md {
         font-size: 36px;
     }
 
-    .post-content .title_sm {
+    .post-content .title-sm {
         font-size: 15px;
     }
 }
 
 @media (max-width:426px) {
-    .hero .title_lg {
+    .hero .title-md {
         font-size: 34px;
     }
 
-    .main-content .title_md {
+    .main-content .title-md {
         font-size: 24px;
     }
 }

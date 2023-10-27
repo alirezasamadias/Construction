@@ -23,7 +23,7 @@
 
     <!-- HEADER -->
     <header id="header" class="header">
-        <nav class="header-nav container">
+        <nav class="header-nav container container-lg">
             <!-- website logo -->
             <a href="index.html" class="website-logo">
                 <img src="Images/Website-Logo.svg" alt="website logo" title="website logo">
@@ -87,16 +87,17 @@
         <!-- hero -->
         <div class="hero">
             <section class="container">
-                <h1 class="title_lg">construction articles</h1>
+                <h1 class="title-lg">construction articles</h1>
                 <p class="hero-content">thought leaders in modern residential & commercial construction</p>
             </section>
         </div>
 
         <!-- section 01 -->
         <div class="main-column">
+            <!-- info -->
             <div class="info">
                 <section>
-                    <h3 class="title_sm sub-line">london office</h3>
+                    <h3 class="title-sm subline">london office</h3>
 
                     <ul class="list">
                         <li class="list-item">
@@ -119,7 +120,7 @@
                 </section>
 
                 <section>
-                    <h3 class="title_sm sub-line">newyork office</h3>
+                    <h3 class="title-sm subline">newyork office</h3>
 
                     <ul class="list">
                         <li class="list-item">
@@ -142,7 +143,7 @@
                 </section>
 
                 <section>
-                    <h3 class="title_sm sub-line">singapore office</h3>
+                    <h3 class="title-sm subline">singapore office</h3>
 
                     <ul class="list">
                         <li class="list-item">
@@ -165,45 +166,46 @@
                 </section>
             </div>
 
+            <!-- main content -->
             <div class="main-content">
-                <section>
-                    <h2 class="title_md sub-line">talk to us - we're here to help</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ullamcorper arcu arcu, non molestie elit euismod maximus. Pellentesque sed est tempus, ullamcorper lorem eu, dictum justo.</p>
+                <section class="container">
+                    <h2 class="title-md subline">talk to us - we're here to help</h2>
+                    <p class="section-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ullamcorper arcu arcu, non molestie elit euismod maximus. Pellentesque sed est tempus, ullamcorper lorem eu, dictum justo.</p>
+
+                    <form action="undefined" method="post">
+                        <div class="form-group">
+                            <label for="first-name">first name <abbr title="required">*</abbr></label>
+                            <input type="text" id="first-name" class="form-item" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="last-name">last name</label>
+                            <input type="text" id="last-name" class="form-item">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email-address">email address <abbr title="required">*</abbr></label>
+                            <input type="email" id="email-address" class="form-item" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone-number">phone number</label>
+                            <input type="tel" id="phone-number" class="form-item">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">subject</label>
+                            <input type="text" id="subject" class="form-item">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="massage">how can we help? <abbr title="required">*</abbr></label>
+                            <textarea id="massage" rows="5" class="form-item" required></textarea>
+                        </div>
+
+                        <input type="submit" class="btn btn-primary" value="get free quote">
+                    </form>
                 </section>
-
-                <form action="undefined" method="post">
-                    <div class="form-group">
-                        <label for="first-name">first name <abbr title="required">*</abbr></label>
-                        <input type="text" id="first-name" class="form-item" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="last-name">last name</label>
-                        <input type="text" id="last-name" class="form-item">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="email-address">email address <abbr title="required">*</abbr></label>
-                        <input type="email" id="email-address" class="form-item" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="phone-number">phone number</label>
-                        <input type="tel" id="phone-number" class="form-item">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="subject">subject</label>
-                        <input type="text" id="subject" class="form-item">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="massage">how can we help? <abbr title="required">*</abbr></label>
-                        <textarea id="massage" rows="5" class="form-item" required></textarea>
-                    </div>
-
-                    <input type="submit" class="btn btn-primary" value="get free quote">
-                </form>
             </div>
         </div>
 
@@ -211,7 +213,7 @@
         <div class="call-to-action">
             <div class="container">
                 <section>
-                    <h2 class="title_sm">For privacy reasons Google Maps needs your permission to be loaded.</h2>
+                    <h2 class="title-sm">For privacy reasons Google Maps needs your permission to be loaded.</h2>
                 </section>
         
                 <div>
@@ -225,7 +227,7 @@
 
     <!-- FOOTER -->
     <footer id="footer">
-        <div class="container parent-items">
+        <div class="container container-lg parent-items">
             <!-- footer item 01 -->
             <div class="footer-item">
                 <a href="#" class="footer-logo">
@@ -239,7 +241,7 @@
 
             <!-- footer item 02 -->
             <section class="footer-item">
-                <h3 class="title_sm">latest tweets</h3>
+                <h3 class="title-sm">latest tweets</h3>
                 
                 <a href="https://twitter.com/Theme_Fusion" target="_blank" class="text-link">Tweets by Theme_Fusion</a>
                 
@@ -248,7 +250,7 @@
 
             <!-- footer item 03 -->
             <section class="footer-item">
-                <h3 class="title_sm">contact us today</h3>
+                <h3 class="title-sm">contact us today</h3>
 
                 <ul class="list">
                     <li class="list-item">
@@ -287,7 +289,7 @@
 
             <!-- footer item 04 -->
             <section class="footer-item item-location">
-                <h3 class="title_sm">our location</h3>
+                <h3 class="title-sm">our location</h3>
 
                 <div class="box">
                     <p class="box-content">For privacy reasons Google Maps needs your permission to be loaded</p>
@@ -300,7 +302,7 @@
 
         <!-- footer nav -->
         <nav class="footer-nav">
-            <div class="container">
+            <div class="container container-lg">
                 <p>&copy;copyright 2012 - 2022 | avada theme by <a href="" class="text-link">themefusion</a> | all rights reserved | powered by <a href="" class="text-link">wordpress</a></p>
 
                 <div class="social-media">
