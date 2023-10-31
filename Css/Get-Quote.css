@@ -49,10 +49,12 @@
 /* call to action */
 .call-to-action {
     background: #404040;
-    display: flex;
-    align-items: center;
-    text-align: center;
     position: relative;
+}
+
+.call-to-action .container {
+    justify-content: center;
+    flex-direction: column;
 }
 
 .call-to-action .title-sm {

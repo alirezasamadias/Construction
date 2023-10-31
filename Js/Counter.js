@@ -1,5 +1,5 @@
 // START
-const informNums = document.querySelectorAll('.main-inform-number');
+const informNums = document.querySelectorAll('.inform-number');
 
 for (const informNumEl of informNums) {
     informNumEl.textContent = '0';
