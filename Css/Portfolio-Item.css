@@ -2,7 +2,6 @@
 #main > .container {
     align-items: stretch;
     row-gap: 60px;
-    text-align: left;
 }
 
 #main .subline::after {
@@ -12,31 +11,13 @@
 }
 
 /* main column */
-.main-column {
-    display: flex;
-    column-gap: 7%;
-}
-
 /* main content */
-.main-content {
-    width: 70%;
-}
-
 .main-content p {
     margin-bottom: 25px;
 }
 
-/* info */
-.info {
-    width: 30%;
-}
-
-.info .title-sm {
-    letter-spacing: 1px;
-    font: bold 12px 'raleway-medium';
-}
-
-.info .list-item {
+/* main-info */
+.main-info .list-item {
     margin: 7px 0 22px;
     text-transform: capitalize;
 }
@@ -65,13 +46,7 @@
 /* Responsive */
 @media (max-width: 768px) {
     .main-column {
-        flex-wrap: wrap;
         row-gap: 25px;
-    }
-
-    .main-content,
-    .info {
-        width: 100%;
     }
 
     .gallery {

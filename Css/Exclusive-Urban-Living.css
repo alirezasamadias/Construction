@@ -1,7 +1,7 @@
 /* hero */
 .hero {
     background-image: url(../Images/Project-03-Hero.jpg);
-    background-position-y: -100px;
+    background-position-y: center;
 }
 
 /* call to action */

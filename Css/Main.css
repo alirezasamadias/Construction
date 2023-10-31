@@ -237,7 +237,7 @@ iframe {
 
 .title-md {
     text-transform: capitalize;
-    font: 30px 'raleway-regular';
+    font: 30px / 1.5 'raleway-regular';
     letter-spacing: 2px;
 }
 
@@ -461,6 +461,14 @@ iframe {
     top: 0;
     left: 0;
     z-index: -1;
+}
+
+/* img filter */
+.img-filter {
+    transition-duration: 0.3s;
+}
+.img-filter:hover {
+    filter: brightness(80%);
 }
 
 /* tooltip */
@@ -696,11 +704,33 @@ iframe {
     border-color: var(--secondary-color);
 }
 
+/* main column */
+.main-column {
+    display: flex;
+    column-gap: 7%;
+    text-align: left;
+}
+
+.main-content {
+    width: 70%;
+}
+
+.main-info {
+    width: 30%;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-info .title-sm {
+    letter-spacing: 1px;
+    font: bold 12px 'raleway-medium';
+}
+
 /* parallax */
 .parallax {
-    background: url(../Images/Home-Parallax.webp) no-repeat center center;
+    background: url(../Images/Home-Parallax.webp) no-repeat center center fixed;
     background-size: cover;
-    background-attachment: fixed;
 }
 
 .parallax .title-md {
@@ -1302,8 +1332,17 @@ form {
         min-height: 420px;
     }
 
-    .carousel img{
+    .carousel img {
         width: calc(100% / 3);
+    }
+
+    .main-column {
+        flex-wrap: wrap;
+    }
+
+    .main-content,
+    .main-info {
+        width: 100%;
     }
 
     /* form */
@@ -1457,4 +1496,3 @@ form {
     }
 }
 /* THE END */
-/* 1460 */

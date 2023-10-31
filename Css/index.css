@@ -57,11 +57,10 @@
 }
 
 /* inform */
-.inform {
+.inform.parallax {
     padding: 110px 30px;
-    background: url(../Images/Home-Info.webp) no-repeat center center fixed;
-    background-size: cover;
-    position: relative;
+    background-image: url(../Images/Home-Info.webp);
+    color: var(--primary-color);
 }
 
 .inform .parent-items {
@@ -70,17 +69,20 @@
 
 .inform-icon {
     font-size: 72px;
-    color: var(--primary-color);
 }
 
 .inform-number {
     margin: 10px 0;
     font: lighter 60px 'raleway-medium';
-    color: var(--primary-color);
 }
 
 .inform .title-sm {
     color: #fff;
+}
+
+.inform.parallax .semicircular::before,
+.inform.parallax .semicircular::after {
+    background-color: #fff;
 }
 
 /* values */
@@ -178,7 +180,7 @@
 /* Responsive */
 @media (max-width: 1024px) {
     /* MAIN */
-    .inform {
+    .inform.parallax {
         padding: 70px 0;
     }
 
