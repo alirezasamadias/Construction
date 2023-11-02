@@ -65,6 +65,9 @@
 .icon-checkmark:before {
   content: "\e91d";
 }
+.icon-bubbles:before {
+  content: "\e970";
+}
 .icon-travel:before {
   content: "\e911";
 }
@@ -87,7 +90,7 @@
   content: "\e921";
 }
 .icon-email:before {
-  content: "\e90c";
+  content: "\e900";
 }
 .icon-facebook:before {
   content: "\ea91";

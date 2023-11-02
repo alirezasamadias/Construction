@@ -248,8 +248,7 @@ iframe {
 
 .subtitle {
     text-transform: capitalize;
-    font-size: 15px;
-    line-height: normal;
+    font-size: 14px;
 }
 
 .subline {
@@ -832,7 +831,8 @@ iframe {
     margin-bottom: 20px;
     padding: 5px 0 15px;
     border-bottom: 2px solid var(--bg-color);
-    font-size: 13px;
+    text-transform: capitalize;
+    font-size: 12px;
 }
 
 .post-info {
@@ -854,6 +854,10 @@ iframe {
     margin-left: auto;
     display: flex;
     align-items: center;
+}
+
+.post-item .text-link {
+    color: var(--secondary-color);
 }
 
 /* partners */
@@ -967,6 +971,11 @@ form {
     row-gap: 30px;
 }
 
+::placeholder {
+    text-transform: capitalize;
+    font-family: 'raleway-regular';
+}
+
 .form-group {
     width: 48%;
     text-transform: uppercase;
@@ -1055,7 +1064,7 @@ form {
 }
 
 .list-icon {
-    margin: 5px 10px 0 0;
+    margin: 4px 10px 0 0;
 }
 
 .box {

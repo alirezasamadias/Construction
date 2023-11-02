@@ -1,7 +1,6 @@
 /* hero */
-#main > .container {
-    align-items: stretch;
-    row-gap: 60px;
+#main .subline {
+    text-align: left;
 }
 
 #main .subline::after {
@@ -11,6 +10,9 @@
 }
 
 /* main column */
+.main-column {
+    margin-bottom: 60px;
+}
 /* main content */
 .main-content p {
     margin-bottom: 25px;

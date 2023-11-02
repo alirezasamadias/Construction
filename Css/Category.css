@@ -1,0 +1,30 @@
+/* hero */
+.hero {
+    min-height: 60vh;
+    background-color: #333;
+}
+
+.hero .container {
+    transform: translateY(11%);
+}
+
+.hero .title-lg {
+    text-transform: capitalize;
+    font-family: 'raleway-medium';
+}
+
+.post-item {
+    box-shadow: 0px 2px 3px #00000012;
+}
+
+.post-info {
+    margin-top: 25px;
+    border: unset;
+    align-items: center;
+}
+
+.read-more {
+    margin-left: unset;
+    display: flex;
+    align-items: center;
+}
