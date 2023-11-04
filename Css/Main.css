@@ -43,7 +43,7 @@
 /* show hero */
 @keyframes show {
     0% {
-        transform: translateY(18%);
+        transform: translateY(11%);
         opacity: 0;
     }
 
@@ -225,30 +225,24 @@ iframe {
 .title-lg {
     letter-spacing: 2px;
     text-transform: uppercase;
-    font: 60px 'raleway-extrabold';
+    font: 60px / 1.3 'raleway-extrabold';
     color: #fff;
 }
 
 .title-md,
 .title-sm {
+    text-transform: capitalize;
     font-weight: lighter;
     color: var(--secondary-color);
 }
 
 .title-md {
-    text-transform: capitalize;
     font: 30px / 1.5 'raleway-regular';
     letter-spacing: 2px;
 }
 
 .title-sm {
-    text-transform: uppercase;
     font-size: 18px;
-}
-
-.subtitle {
-    text-transform: capitalize;
-    font-size: 14px;
 }
 
 .subline {
@@ -421,7 +415,6 @@ iframe {
     justify-content: center;
     align-items: center;
     row-gap: 10px;
-    color: #fff;
     opacity: 0;
     transform: scaleY(0);
     transition-duration: 0.5s;
@@ -433,6 +426,7 @@ iframe {
 }
 
 .shadow-icon {
+    cursor: pointer;
     padding: 14px;
     margin: 0 3px;
     border-radius: 50%;
@@ -448,9 +442,11 @@ iframe {
 }
 
 .img-shadow .title-sm {
-    width: 100%;
-    text-transform: capitalize;
     color: #fff;
+}
+
+.img-shadow .title-sm:nth-child(3) {
+    font-size: 14px;
 }
 
 .cover {
@@ -467,7 +463,7 @@ iframe {
     transition-duration: 0.3s;
 }
 .img-filter:hover {
-    filter: brightness(80%);
+    filter: opacity(50%);
 }
 
 /* tooltip */
@@ -536,7 +532,7 @@ iframe {
 
 /* website logo */
 .website-logo {
-    height: 70%;
+    height: 60%;
 }
 
 /* menu */
@@ -653,6 +649,7 @@ iframe {
 .hero {
     width: 100%;
     min-height: 95vh;
+    padding-top: 100px;
     background: no-repeat center 100px;
     background-size: cover;
     position: relative;
@@ -660,7 +657,7 @@ iframe {
 }
 
 .hero .container {
-    transform: translateY(7%);
+    padding: 50px;
     justify-content: center;
     row-gap: 10px;
     animation: show 0.7s linear;
@@ -722,6 +719,7 @@ iframe {
 }
 
 .main-info .title-sm {
+    text-transform: uppercase;
     letter-spacing: 1px;
     font: bold 12px 'raleway-medium';
 }
@@ -774,6 +772,7 @@ iframe {
 }
 
 .slider .title-sm {
+    text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: bold;
     color: #fff;
@@ -816,15 +815,15 @@ iframe {
 
 .post-content {
     flex-grow: 1;
-    padding: 25px 25px 20px;
+    padding: 25px 20px 20px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     text-align: left;
 }
 
 .post-item .title-md {
     font-size: 22px;
+    margin-bottom: auto;
 }
 
 .post-date {
@@ -1038,6 +1037,7 @@ form {
 }
 
 #footer .title-sm {
+    text-transform: uppercase;
     letter-spacing: 2px;
     font-size: 16px;
     color: var(--primary-color);
@@ -1402,6 +1402,7 @@ form {
 
     /* MAIN */
     .hero {
+        padding-top: 80px;
         background-position-y: 80px;
     }
 

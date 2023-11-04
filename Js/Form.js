@@ -1,4 +1,3 @@
-// START
 const formEl = document.querySelector('form');
 const formItems = document.querySelectorAll('.form-item');
 const formSubmit = document.querySelector('input[type="submit"]');

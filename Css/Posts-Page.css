@@ -1,16 +1,12 @@
 /* hero */
 .hero {
-    min-height: 60vh;
+    min-height: 50vh;
     background-color: #333;
-}
-
-.hero .container {
-    transform: translateY(11%);
 }
 
 .hero .title-lg {
     text-transform: capitalize;
-    font-family: 'raleway-medium';
+    font-family: 'raleway-regular';
 }
 
 /* main column */
@@ -22,7 +18,6 @@
 
 .main-content .title-sm {
     letter-spacing: 1px;
-    text-transform: capitalize;
 }
 
 .main-content .list {
@@ -151,10 +146,13 @@ input[type=checkbox] {
     margin-bottom: 25px;
     padding: 9px 15px;
     background-color: var(--bg-color);
-    text-transform: capitalize;
     letter-spacing: 1px;
     font: lighter 20px "raleway-regular";
     color: var(--secondary-color);
+}
+
+.sidebar .title-sm {
+    text-transform: capitalize;
 }
 
 .sidebar .list-item {
@@ -258,7 +256,6 @@ input[type=checkbox] {
 }
 
 .tab .title-sm {
-    text-transform: capitalize;
     font: normal 15px "raleway-medium";
 }
 
@@ -288,7 +285,7 @@ input[type=checkbox] {
 /* tags */
 .tag-link {
     margin-bottom: 5px;
-    padding: 5px 8px;
+    padding: 8px 14px;
     border: 1px solid #e6e6e6;
     text-transform: capitalize;
     font-size: 14px;
@@ -297,7 +294,7 @@ input[type=checkbox] {
 }
 
 .tag-link:hover {
-    background-color: var(--primary-color);
+    background-color: #c6c7cc;
     color: #fff;
 }
 

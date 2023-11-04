@@ -1,4 +1,3 @@
-// START
 const getMapEl = document.getElementById('get-map');
 const mapEl = document.getElementById('map');
 

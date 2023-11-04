@@ -1,4 +1,3 @@
-// START
 const slideItems = document.querySelectorAll('.slide-item');
 const radios = document.querySelectorAll('.radio');
 

@@ -1,4 +1,3 @@
-// START
 // site loader
 const siteLoaderEl = document.querySelector('.site-loader');
 const heroContainer = document.querySelector('.hero .container');

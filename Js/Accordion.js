@@ -1,4 +1,3 @@
-// START
 const tabItems = document.querySelectorAll('.tab-item');
 const tabContents = document.querySelectorAll('.tab-content');
 

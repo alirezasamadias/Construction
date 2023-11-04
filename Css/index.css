@@ -40,6 +40,10 @@
     transform: rotateY(0deg);
 }
 
+.card-face .title-md {
+    font-size: 24px;
+}
+
 .card-face-icon {
     padding: 18px;
     border-radius: 50%;
@@ -54,6 +58,10 @@
     top: 0;
     left: 0;
     color: var(--secondary-color);
+}
+
+.card-back .title-sm {
+    text-transform: uppercase;
 }
 
 /* inform */
@@ -77,6 +85,7 @@
 }
 
 .inform .title-sm {
+    text-transform: uppercase;
     color: #fff;
 }
 
@@ -147,7 +156,6 @@
 .values .title-sm {
     margin-bottom: 20px;
     letter-spacing: 1px;
-    text-transform: capitalize;
     font: 16px 'raleway-regular';
     transition-duration: 0.25s;
 }

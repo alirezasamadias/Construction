@@ -1,4 +1,3 @@
-// START
 const carousel = document.querySelector(".carousel");
 const imgs = carousel.querySelectorAll("img");
 const firstImg = imgs[0];

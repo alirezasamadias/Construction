@@ -1,4 +1,3 @@
-// START
 const tabItems = document.querySelectorAll('.tab-item');
 const tabTargets = document.querySelectorAll('.tab-target');
 const btnAll = document.querySelector('[data-target=all]');
