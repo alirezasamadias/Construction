@@ -89,14 +89,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    row-gap: 10px;
+    row-gap: 30px;
     transition: all 0.7s , background-color 0s;
 }
 
 .loader-img {
-    width: 250px;
-    height: 170px;
-    object-fit: contain;
+    width: auto;
+    height: auto;
 }
 
 .loader {
@@ -135,13 +134,13 @@ i {
     display: inline-block;
 }
 
-/* img {
+img {
     display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center center;
-} */
+}
 /* image alt */
 img::before {
     content: '\f128' ' Broken Image of ' attr(alt);
@@ -777,10 +776,6 @@ iframe {
     background-color: #fff;
     display: flex;
     flex-direction: column;
-}
-
-.post-img {
-    display: none;
 }
 
 .post-content {
