@@ -135,13 +135,13 @@ i {
     display: inline-block;
 }
 
-img {
+/* img {
     display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center center;
-}
+} */
 /* image alt */
 img::before {
     content: '\f128' ' Broken Image of ' attr(alt);
@@ -777,6 +777,10 @@ iframe {
     background-color: #fff;
     display: flex;
     flex-direction: column;
+}
+
+.post-img {
+    display: none;
 }
 
 .post-content {
