@@ -21,8 +21,8 @@ const scrollUpEl = document.querySelector('.scroll-up-page');
 // site loader
 document.onreadystatechange = ()=>{
     if (document.readyState == "complete") {
-        // siteLoaderEl.style.opacity = "0";
-        // siteLoaderEl.style.visibility = "hidden";
+        siteLoaderEl.style.opacity = "0";
+        siteLoaderEl.style.visibility = "hidden";
         heroContainer.style.display = 'flex';
     } else {
         heroContainer.style.display = 'none';
