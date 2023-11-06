@@ -47,7 +47,8 @@ if (undefinedEl.style.display != 'none') {
     categoryItemsEl.style.display = 'none';
     titleEl.textContent = 'search: ' + windowHash.replace('#','');
 }
-const searchBox = document.querySelector('#search-box');
+
+const searchBox = document.querySelector('.search-box');
 searchBox.addEventListener('submit',()=>{
     setTimeout(() => {
         location.reload();
