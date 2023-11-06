@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Avada Construction</title>
+    <title>Category - Avada Construction</title>
     <!-- Favicon -->
     <link rel="icon" href="Images/Favicon.png">
     <!-- Font -->
@@ -88,12 +88,32 @@
         <!-- hero -->
         <div class="hero">
             <section class="container">
-                <h1 class="title-lg">building inspiring spaces</h1>
+                <h1 class="title-lg"></h1>
             </section>
         </div>
 
+        <!-- undefined -->
+        <div class="undefined container">
+            <section>
+                <h2 class="title-md">need a new search?</h2>
+                <p>If you didn’t find what you were looking for, try a new search!</p>
+            </section>
+
+            <!-- search box -->
+            <form action="Category.html" method="get" class="search-box subline" id="search-box">
+                <input type="search" placeholder="Search..." class="form-item" id="search-input" required>
+                
+                <div class="btn-search">
+                    <label for="submit" class="icon-search"></label>
+                    <input type="submit" id="submit" value=" " class="submit-search">
+                </div>
+            </form>
+
+            <h3 class="title-md">Nothing Found</h3>
+        </div>
+
         <!-- category items -->
-        <div class="container">
+        <div class="category-items container">
             <div class="parent-items">
                 <!-- category item 01 -->
                 <div class="post-item" data-target="" data-match="1">
@@ -470,6 +490,7 @@
     <!-- JS -->
     <script src="Js/Main.js"></script>
     <script src="Js/Category.js"></script>
+    <script src="Js/Search-Box.js"></script>
 </body>
 </html>
 <!-- THE END -->

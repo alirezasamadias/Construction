@@ -1,24 +1,35 @@
+const titleEl = document.querySelector('.title-lg');
+const undefinedEl = document.querySelector('.undefined');
+const categoryItemsEl = document.querySelector('.category-items');
 const postItems = document.querySelectorAll('.post-item');
 const postTargets = document.querySelectorAll('.post-target');
-const titleLg = document.querySelector('.title-lg');
 
-let windowUrl = window.location.hash;
+let windowHash = window.location.hash;
 
 // set post-item data-target by post-target
 let targets = [];
 for (const postItem of postItems) {
     for (const postTarget of postTargets) {
+        if (postTarget.getAttribute('href').includes(windowHash)) {
+            // hide undefined 
+            undefinedEl.style.display = 'none';
             // edit window.location.hash  
-        if (postTarget.getAttribute('href').includes(windowUrl)) {
-            windowUrl = postTarget.textContent;
+            windowHash = postTarget.textContent;
             // set title hero
-            titleLg.textContent = windowUrl;
+            titleEl.textContent = windowHash;
         }
 
         if (postItem.dataset.match == postTarget.parentElement.dataset.match) {
             targets.push(postTarget.textContent);
             postItem.dataset.target = targets;
         }
+
+        // debug by refresh
+        postTarget.addEventListener('click',()=>{
+            setTimeout(() => {
+                location.reload();
+            }, 10);
+        });
     }
     targets = [];
 }
@@ -26,16 +37,19 @@ for (const postItem of postItems) {
 // filter post-item
 for (const postItem of postItems) {
     const target = postItem.dataset.target;
-    if (!target.includes(windowUrl)) {
+    if (!target.includes(windowHash)) {
         postItem.style.display = 'none';
     }
 }
 
-// debug by refresh
-for (const postTarget of postTargets) {
-    postTarget.addEventListener('click',()=>{
-        setTimeout(() => {
-            location.reload();
-        }, 10);
-    });
+// undefined search
+if (undefinedEl.style.display != 'none') {
+    categoryItemsEl.style.display = 'none';
+    titleEl.textContent = 'search: ' + windowHash.replace('#','');
 }
+const searchBox = document.querySelector('#search-box');
+searchBox.addEventListener('submit',()=>{
+    setTimeout(() => {
+        location.reload();
+    }, 10);
+});
