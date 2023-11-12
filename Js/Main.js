@@ -12,9 +12,9 @@ const subMenuEl = document.querySelector('.submenu');
 // footer iframe
 const iframeEl = document.querySelector('#footer iframe');
 // static map
+const parentMapEl = document.querySelector('#footer .parent-map');
 const getStaticMapEl = document.getElementById('get-static-map');
 const staticMapEl = document.getElementById('static-map');
-const boxEl = document.querySelector('.box');
 // show scroll up page
 const scrollUpEl = document.querySelector('.scroll-up-page');
 
@@ -111,9 +111,9 @@ window.addEventListener('scroll',()=>{
 
 // static map
 getStaticMapEl.addEventListener('click',()=>{
-    boxEl.innerHTML = '<div class="loader"></div>';
+    parentMapEl.innerHTML = '<div class="loader"></div>';
     setTimeout(() => {
-        boxEl.style.display = 'none';
+        parentMapEl.style.display = 'none';
         staticMapEl.style.display = 'block';
     },300);
 });

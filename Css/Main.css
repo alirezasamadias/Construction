@@ -1029,7 +1029,7 @@ form {
 }
 
 #footer .parent-items {
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(auto-fill,minmax(260px,1fr));
 }
 
 .footer-item {
@@ -1039,8 +1039,8 @@ form {
     row-gap: 20px;
 }
 
-.footer-item:nth-child(1) {
-    row-gap: 25px;
+.footer-item:has(.footer-logo) {
+    row-gap: 20px;
 }
 
 #footer .title-sm {
@@ -1055,12 +1055,17 @@ form {
 }
 
 #footer iframe {
-    width: 100%;
+    max-width: 100%;
     height: 100%;
 }
 
+#footer .list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
 #footer .list-item {
-    margin-bottom: 10px;
     display: flex;
 }
 
@@ -1073,16 +1078,17 @@ form {
     margin: 4px 10px 0 0;
 }
 
-.box {
+/* map */
+.parent-map {
     width: 100%;
-    height: 300px;
+    height: 100%;
     padding: 30px 20px;
-    background-color: #555555;
+    background: #404040;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    row-gap: 20px;
+    row-gap: 25px;
     text-align: center;
     color: #fff;
     position: relative;
@@ -1090,7 +1096,10 @@ form {
 
 #static-map {
     display: none;
+    width: auto;
+    max-width: 100%;
     height: auto;
+    max-height: 300px;
 }
 
 /* footer nav */
@@ -1289,11 +1298,15 @@ form {
         row-gap: 60px;
     }
 
-    .footer-item:nth-child(1),
-    .footer-item:nth-child(4) {
+    .footer-item:has(.footer-logo) {
         grid-column: span 2;
         align-items: center;
         text-align: center;
+    }
+
+    .footer-item:has(.parent-map) {
+        grid-column: span 2;
+        min-height: 300px;
     }
 }
 
@@ -1366,11 +1379,13 @@ form {
     }
 
     /* FOOTER */
-    .footer-item:nth-child(1),
-    .footer-item:nth-child(4) {
+    .footer-item:has(.footer-logo),
+    .footer-item:has(.parent-map) {
         grid-column: span 1;
-        align-items: flex-start;
-        text-align: left;
+    }
+
+    #footer iframe {
+        min-height: 300px;
     }
 
     /* scroll up page */
@@ -1443,8 +1458,13 @@ form {
         padding-top: 115px;
     }
 
-    /* footer nav */
-    #footer .container {
+    /* FOOTER */
+    .footer-item:has(.footer-logo){
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .footer-nav .container {
         flex-direction: column;
         text-align: center;
         row-gap: 25px;

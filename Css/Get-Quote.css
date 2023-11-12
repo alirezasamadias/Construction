@@ -46,19 +46,12 @@
     text-align: center;
 }
 
-/* call to action */
-.call-to-action {
-    background: #404040;
-    position: relative;
+/* map parent */
+#main .parent-map {
+    min-height: 60vh;
 }
 
-.call-to-action .container {
-    justify-content: center;
-    flex-direction: column;
-}
-
-.call-to-action .title-sm {
-    margin-bottom: 20px;
+.parent-map .title-sm {
     color: white;
 }
 
