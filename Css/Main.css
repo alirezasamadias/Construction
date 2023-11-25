@@ -1436,6 +1436,10 @@ form {
         background-position-y: 80px;
     }
 
+    .hero .container {
+        padding: 30px;
+    }
+
     .sub-hero {
         padding: 30px 20px 50px;
     }
@@ -1502,6 +1506,10 @@ form {
     }
 
     /* MAIN */
+    .hero .container {
+        padding: 10px;
+    }
+
     .hero-content {
         font-size: 20px;
     }
