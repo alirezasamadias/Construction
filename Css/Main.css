@@ -730,7 +730,7 @@ form {
     margin: 15px 8px 0;
 }
 
-.hero .btn:nth-child(1):hover {
+.hero .btn-secondary:hover {
     background-color: var(--primary-color);
 }
 
@@ -1268,6 +1268,7 @@ form {
 
     .submenu-btn:hover {
         background-color: var(--primary-color);
+        color: #fff;
     }
 
     .menu-hamburger {
