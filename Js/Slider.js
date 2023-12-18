@@ -4,10 +4,10 @@ const radios = document.querySelectorAll('.radio');
 let item = 0;
 const setItem = ()=>{
     for (const slideItem of slideItems) {
-        slideItem.classList.remove('show');
+        slideItem.classList.remove('show-slide');
     }
     setTimeout(()=>{
-        slideItems[item].classList.add('show');
+        slideItems[item].classList.add('show-slide');
     },0);
 
     for (const radio of radios) {
@@ -28,10 +28,10 @@ setInterval(()=>{
 
 const target = (item)=>{
     for (const slideItem of slideItems) {
-        slideItem.classList.remove('show');
+        slideItem.classList.remove('show-slide');
     }
     setTimeout(()=>{
-        slideItems[item].classList.add('show');
+        slideItems[item].classList.add('show-slide');
     },0);
 
     for (const radio of radios) {

@@ -182,7 +182,7 @@
 
 .news .btn-hide::before,
 .news .btn-hide::after {
-    background-color: #fff;
+    border-top-color: #fff;
 }
 
 /* Responsive */

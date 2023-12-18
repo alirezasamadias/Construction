@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - Avada Construction</title>
     <!-- Favicon -->
-    <link rel="icon" href="Images/Favicon.png">
+    <link rel="icon" href="Images/Favicon.ico">
     <!-- Font -->
     <link rel="stylesheet" href="Css/Fonts.css">
     <!-- Font Icon -->
-    <link rel="stylesheet" href="Css/Icon.css">
+    <link rel="stylesheet" href="Css/Font-Icon.css">
     <!-- CSS -->
     <link rel="stylesheet" href="Css/Main.css">
     <link rel="stylesheet" href="Css/index.css">
@@ -266,8 +266,8 @@
                         <!-- img shadow -->
                         <nav class="img-shadow">
                             <div>
-                                <a href="Florida-Heath-Facility.html" class="shadow-icon icon-link"></a> 
-                                <i class="shadow-icon icon-search"></i>
+                                <a href="Florida-Heath-Facility.html" class="shadow-btn icon-link"></a>
+                                <button class="shadow-btn icon-search" data-target="Images/Project-01.jpg"></button>
                             </div>
         
                             <h4 class="title-sm"><a href="Florida-Heath-Facility.html">florida heath facility</a></h4>
@@ -284,8 +284,8 @@
                         <!-- img shadow -->
                         <nav class="img-shadow">
                             <div>
-                                <a href="Maine-Modernity.html" class="shadow-icon icon-link"></a> 
-                                <i class="shadow-icon icon-search"></i>
+                                <a href="Maine-Modernity.html" class="shadow-btn icon-link"></a> 
+                                <button class="shadow-btn icon-search" data-target="Images/Project-02.jpg"></button>
                             </div>
     
                             <h4 class="title-sm"><a href="Maine-Modernity.html">maine moderniti</a></h4>
@@ -302,8 +302,8 @@
                         <!-- img shadow -->
                         <nav class="img-shadow">
                             <div>
-                                <a href="Exclusive-Urban-Living.html" class="shadow-icon icon-link"></a> 
-                                <i class="shadow-icon icon-search"></i>
+                                <a href="Exclusive-Urban-Living.html" class="shadow-btn icon-link"></a> 
+                                <button class="shadow-btn icon-search" data-target="Images/Project-03.jpg"></button>
                             </div> 
         
                             <h4 class="title-sm"><a href="Exclusive-Urban-Living.html">exclusion urben living</a></h4>
@@ -388,7 +388,7 @@
                 <!-- slider -->
                 <div class="slider">
                     <!-- slider item 01 -->
-                    <div class="slide-item show">
+                    <div class="slide-item show-slide">
                         <img src="Images/Home-Testimonial-01.jpg" alt="Testimonial" class="slide-img">
 
                         <blockquote class="slide-content">No man but feels more of a man in the world if he have but a bit of ground that he can call his own. However small it is on the surface, it is four thousand miles deep; and that is a very handsome property.</blockquote>
@@ -430,8 +430,8 @@
                             <!-- img shadow -->
                             <nav class="img-shadow">
                                 <div>
-                                    <a href="Post-01.html" class="shadow-icon icon-link"></a>
-                                    <i class="shadow-icon icon-search"></i>
+                                    <a href="Post-01.html" class="shadow-btn icon-link"></a>
+                                    <button class="shadow-btn icon-search" data-target="Images/Blog-Post-01.jpg"></button>
                                 </div>
         
                                 <h4 class="title-sm"><a href="Post-01.html">redeveloping florida's remote southern coast</a></h4>
@@ -463,8 +463,8 @@
                             <!-- img shadow -->
                             <nav class="img-shadow">
                                 <div>
-                                    <a href="Post-02.html" class="shadow-icon icon-link"></a> 
-                                    <i class="shadow-icon icon-search"></i>
+                                    <a href="Post-02.html" class="shadow-btn icon-link"></a> 
+                                    <button class="shadow-btn icon-search" data-target="Images/Blog-Post-02.jpg"></button>
                                 </div>
             
                                 <h4 class="title-sm"><a href="Post-02.html">how We manage Large construction projects</a></h4>
@@ -495,8 +495,8 @@
                             <!-- img shadow -->
                             <nav class="img-shadow">
                                 <div>
-                                    <a href="Post-03.html" class="shadow-icon icon-link"></a> 
-                                    <i class="shadow-icon icon-search"></i>
+                                    <a href="Post-03.html" class="shadow-btn icon-link"></a> 
+                                    <button class="shadow-btn icon-search" data-target="Images/Blog-Post-03.jpg"></button>
                                 </div>
             
                                 <h4 class="title-sm"><a href="Post-03.html">future proofing a modern home</a></h4>
@@ -669,12 +669,30 @@
         </nav>
     </footer>
 
+    <!-- modal -->
+    <div class="modal">
+        <!-- modal btn -->
+        <button class="shadow-btn icon-close btn-close"></button>
+        <button class="shadow-btn icon-left btn-prev"></button>
+        <button class="shadow-btn icon-right btn-next"></button>
+
+        <!-- modal img -->
+        <img src="" alt="" class="modal-img"/>
+
+        <div class="tab">
+            <img src="" alt="" class="tab-img"/>
+            <img src="" alt="" class="tab-img"/>
+            <img src="" alt="" class="tab-img"/>
+        </div>
+    </div>
+
     <!-- scroll up page -->
     <a href="#" class="scroll-up-page icon-up"></a>
         
     <!-- JS -->
     <script src="Js/Main.js"></script>
     <script src="Js/Counter.js"></script>
+    <script src="Js/Modal.js"></script>
     <script src="Js/Slider.js"></script>
     <script src="Js/Carousel.js"></script>
 </body>
