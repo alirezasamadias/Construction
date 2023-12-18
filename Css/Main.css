@@ -828,6 +828,10 @@ form {
     margin: 15px 8px 0;
 }
 
+.hero .btn:hover {
+    transform: translateY(-8%);
+}
+
 .hero .btn-secondary:hover {
     background-color: var(--primary-color);
 }
