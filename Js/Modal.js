@@ -39,7 +39,7 @@ for (const showModalBtn of showModalButtons) {
             TabImg.setAttribute('src',imgTarget[index]);
 
             TabImg.addEventListener('click' , ()=>{
-                num = index
+                num = index;
                 showImg(num,300);
             });
         });
