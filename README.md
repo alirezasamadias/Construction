@@ -1,6 +1,6 @@
 # My Portfolio
 
-![alt text](src/Assets/Images/Screen-Project.png)
+![alt text](Images/Screen-Project.png)
 
 ## Url
 https://construction-4eay.onrender.com
